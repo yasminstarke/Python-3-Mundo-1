@@ -5,23 +5,39 @@
 
 import math
 
-a = int(input('Digite o comprimento do cateto oposto: '))
-b = int(input('Digite o comprimento do cateto adjacente: '))
+a = float(input('Digite o comprimento do cateto oposto: ').replace(',','.'))
+b = float(input('Digite o comprimento do cateto adjacente: ').replace(',','.'))
 
 c = math.pow(a, 2) + math.pow(b, 2)
 c2 = math.sqrt(c)
 
-print('O valor da hipotenusa é de {}'.format(c2))
+print('O valor da hipotenusa é de {:.2f}'.format(c2))
 
 # OU
 
-#import math
+'''import math
 
-#a = int(input('Digite o comprimento do cateto oposto: '))
-#b = int(input('Digite o comprimento do cateto adjacente: '))
+a = float(input('Digite o comprimento do cateto oposto: ').replace(',','.')
+b = float(input('Digite o comprimento do cateto adjacente: ').replace(',','.')
+c = (math.pow(a, 2) + math.pow(b, 2))**(1/2)
 
-#c = (math.pow(a, 2) + math.pow(b, 2))**(1/2)
+print('O valor da hipotenusa é de {}'.format(c))'''
 
 
-#print('O valor da hipotenusa é de {}'.format(c))
+# OU
 
+'''co = float(input('Comprimento do cateto oposto: ').replace(',','.'))
+ca = float(input('Comprimento do cateto adjacente: ').replace(',','.'))
+hi = (co ** 2 + ca **2) ** (1/2)
+
+print('A hipotenusa vai medir {:.2f}'.format(hi))'''
+
+# OU
+
+'''import math
+
+co = float(input('Comprimento do cateto oposto: ').replace(',','.'))
+ca = float(input('Comprimento do cateto adjacente: ').replace(',','.'))
+hi = math.hypot(co, ca)
+
+print('A hipotenusa vai medir {:.2f}'.format(hi))'''
